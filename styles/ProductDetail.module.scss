@@ -1,0 +1,22 @@
+.productDetail {
+    width: 100%;
+    padding: 72px 0;
+
+    :global {
+        .content {
+            width: 680px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+        .product-description {
+            width: 680px;
+            margin: 24px auto;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}

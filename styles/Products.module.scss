@@ -1,0 +1,14 @@
+.products {
+    width: 100%;
+    padding: 72px 0;
+
+    :global {
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 680px;
+            margin: 0 auto;
+        }
+    }
+}

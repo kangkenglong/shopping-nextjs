@@ -1,0 +1,17 @@
+.counter {
+    display: flex;
+    align-items: center;
+
+    :global {
+        button {
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+        }
+
+        p {
+            margin: 0 8px;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.productDetailCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 24px;
+
+    :global {
+        .product-images {
+            flex-shrink: 0;
+        }
+
+        .product-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .product-name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .product-money {
+                    font-size: 24px;
+                    color: #b72727;
+                }
+            }
+
+            .product-counts {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .add-shopping-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 12px;
+
+                    &__button {
+                        font-size: 12px;
+                        padding: 4px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
