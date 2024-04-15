@@ -3,17 +3,22 @@ import styles from './Counter.module.scss';
 
 type Props = {
     maxAmount: number;
+    defaultValue?: number;
     onChanged?: (count: number) => void;
+    onSubtractLastOne?: () => void;
 }
 
 export default function Counter({
     maxAmount,
+    defaultValue = 1,
+    onSubtractLastOne,
     onChanged,
 }: Props) {
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(defaultValue);
 
     const handleSubtract = () => {
         if (count === 1) {
+            onSubtractLastOne?.();
             return;
         }
 

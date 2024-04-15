@@ -10,7 +10,9 @@ export default function Header() {
                 <Link href={'/'} className='logo'>Shopping</Link>
             </div>
             <div className='content--right'>
-                <Image className='image-button' src={IconShoppingCart} alt='shopping cart icon' width={24} height={24} />
+                <Link href={'/shoppingCart'} className='logo'>
+                    <Image className='image-button' src={IconShoppingCart} alt='shopping cart icon' width={24} height={24} />
+                </Link>
                 <p className='user-name'>Kedron</p>
             </div>
         </header>

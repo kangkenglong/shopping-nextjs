@@ -1,4 +1,4 @@
-import type { ProductInfo, ProductDetailInfo } from "./types";
+import type { ProductInfo, ProductDetailInfo, ShoppingCartProductInfo } from "./types";
 
 const mockProductsData: ProductInfo[] = [
     {
@@ -84,7 +84,27 @@ const mockProductDetailsData: {[productId: string]: ProductDetailInfo} = {
     },
 }
 
+const mockShoppingCartInfo: ShoppingCartProductInfo[] = [
+    {
+        productId: '111',
+        productName: '时尚连衣裙',
+        productImage: '/32-2.jpg',
+        money: '99.9',
+        maxAmount: 6,
+        count: 2,
+    },
+    {
+        productId: '222',
+        productName: '时尚连衣裙1',
+        productImage: '/32-2.jpg',
+        money: '199.9',
+        maxAmount: 6,
+        count: 1,
+    },
+];
+
 export {
     mockProductsData,
     mockProductDetailsData,
+    mockShoppingCartInfo,
 }
